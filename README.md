@@ -1,67 +1,180 @@
-🧾 Legal Document Summarizer Using LLMs
+<div align="center">
+
+# 🧾 Legal Document Summarizer Using LLMs
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Gradio](https://img.shields.io/badge/Gradio-4.14.0-orange?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
+[![Transformers](https://img.shields.io/badge/🤗_Transformers-4.40.1-yellow?style=for-the-badge)](https://huggingface.co/transformers/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+**An AI-powered web application that analyzes legal documents and generates comprehensive summaries, glossaries, verdicts, and interactive Q&A using open-source LLMs.**
+
+[Features](#-features) • [Installation](#️-installation--setup) • [Usage](#-usage-instructions) • [Tech Stack](#️-tech-stack) • [Models](#-models-used)
+
+---
+
+</div>
+
+## 📋 Overview
 
 This project is an AI-powered web application that analyzes legal documents and generates:
 
-✔ Comprehensive summary
-✔ Glossary of legal terms (simplified explanation)
-✔ AI-inferred verdict or outcome
-✔ Custom Q&A based on document content
+✔ **Comprehensive summary**  
+✔ **Glossary of legal terms** (simplified explanation)  
+✔ **AI-inferred verdict** or outcome  
+✔ **Custom Q&A** based on document content  
 
-It supports PDF, DOCX, and TXT files and uses open-source LLMs to ensure accessibility and scalability.
+It supports **PDF, DOCX, and TXT** files and uses **open-source LLMs** to ensure accessibility and scalability.
 
-🚀 Features
-Feature	Description
-📝 Summary	Extracts key points, legal facts, issues & arguments
-📘 Glossary	Identifies and explains legal terminology
-⚖️ Verdict Prediction	Infers likely case outcome (non-legal advisory)
-❓ Q&A	Ask specific questions based on uploaded document
-⬇ Save Summary	Generates downloadable results file
-🛠️ Tech Stack
-Category	Tool
-Framework	Gradio
-AI/LLM Models	Pegasus-XSum (Summarization), LaMini-T5 (Text Generation)
-Document Extractor	pdfplumber, python-docx
-Language	Python
-📂 Project Structure
+---
+
+## 🚀 Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 📝 Summary
+Extracts key points, legal facts, issues & arguments from documents
+
+</td>
+<td width="50%">
+
+### 📘 Glossary
+Identifies and explains complex legal terminology in simple language
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ⚖️ Verdict Prediction
+Infers likely case outcome (non-legal advisory)
+
+</td>
+<td width="50%">
+
+### ❓ Q&A
+Ask specific questions based on uploaded document
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+### ⬇️ Save Summary
+Generates downloadable results file with timestamp
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tool |
+|:--------:|:-----|
+| **Framework** | ![Gradio](https://img.shields.io/badge/Gradio-FF6F00?style=flat&logo=gradio&logoColor=white) |
+| **AI/LLM Models** | Pegasus-XSum (Summarization), LaMini-T5 (Text Generation) |
+| **Document Extractor** | pdfplumber, python-docx |
+| **Language** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) |
+
+---
+
+## 📂 Project Structure
+```
 📁 Legal-Summarizer/
-│── app.py                 # Main application code
-│── requirements.txt       # Dependencies
-│── langflow_prd12.json    # Workflow structure (optional)
-│── README.md              # Documentation
+├── 📄 app.py                 # Main application code
+├── 📄 requirements.txt       # Dependencies
+├── 📄 langflow_prd12.json    # Workflow structure (optional)
+└── 📄 README.md              # Documentation
+```
 
-⚙️ Installation & Setup
-🔹 1️⃣ Clone the Repository
+---
+
+## ⚙️ Installation & Setup
+
+### 🔹 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
+```
 
-🔹 2️⃣ Install Dependencies
+### 🔹 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-🔹 3️⃣ Run the Application
+### 🔹 3️⃣ Run the Application
+```bash
 python app.py
-
+```
 
 The Gradio interface will open in your browser:
-👉 http://127.0.0.1:7860/
 
-📌 Usage Instructions
+👉 **http://127.0.0.1:7860/**
 
-1️⃣ Upload a legal document (PDF/DOCX/TXT)
-2️⃣ Click Analyze Document
-3️⃣ View:
+---
 
-Extracted text
+## 📌 Usage Instructions
 
-AI summary
+<div align="center">
+```mermaid
+graph LR
+    A[📄 Upload Document] --> B[🔍 Analyze]
+    B --> C[📝 View Summary]
+    B --> D[📘 View Glossary]
+    B --> E[⚖️ View Verdict]
+    B --> F[❓ Ask Questions]
+    F --> G[💬 Get Answers]
+    C --> H[⬇️ Download Report]
+    D --> H
+    E --> H
+```
 
-Glossary
+</div>
 
-Predicted verdict
+1️⃣ **Upload** a legal document (PDF/DOCX/TXT)  
+2️⃣ Click **Analyze Document**  
+3️⃣ **View** the results:
+   - 📄 Extracted text
+   - 📝 AI summary
+   - 📘 Glossary
+   - ⚖️ Predicted verdict
 
-4️⃣ Ask follow-up questions for deeper insights
-5️⃣ Download the generated report if needed
+4️⃣ **Ask** follow-up questions for deeper insights  
+5️⃣ **Download** the generated report if needed
 
-🌐 Models Used
-Model	Purpose
-google/pegasus-xsum	High quality summarization
-MBZUAI/LaMini-T5-738M	Legal glossary + verdict reasoning
+---
+
+## 🌐 Models Used
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Purpose</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>google/pegasus-xsum</code></td>
+<td>📝 Summarization</td>
+<td>High quality extractive & abstractive summarization</td>
+</tr>
+<tr>
+<td><code>MBZUAI/LaMini-T5-738M</code></td>
+<td>🤖 Text Generation</td>
+<td>Legal glossary + verdict reasoning</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<div align="center">
+
+
+</div>
