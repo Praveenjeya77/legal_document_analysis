@@ -1,18 +1,6 @@
 <div align="center">
 
 # 🧾 Legal Document Summarizer Using LLMs
-
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Gradio](https://img.shields.io/badge/Gradio-4.14.0-orange?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
-[![Transformers](https://img.shields.io/badge/🤗_Transformers-4.40.1-yellow?style=for-the-badge)](https://huggingface.co/transformers/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-**An AI-powered web application that analyzes legal documents and generates comprehensive summaries, glossaries, verdicts, and interactive Q&A using open-source LLMs.**
-
-[Features](#-features) • [Installation](#️-installation--setup) • [Usage](#-usage-instructions) • [Tech Stack](#️-tech-stack) • [Models](#-models-used)
-
----
-
 </div>
 
 ## 📋 Overview
